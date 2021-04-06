@@ -12,4 +12,17 @@ myFirstFunction('jane','blue');
  
 
  <h1><?php bloginfo('name'); ?></h1>
- <!-- <p><?php  bloginfo('description') ;?></p> -->
+ <p><?php  bloginfo('description') ;?></p> 
+
+
+<?php  
+    $name = array('Arjun','Malik');
+    $count=1;
+    while($count<100){
+        echo "<li>$count</li>";
+        $count++;
+
+    }
+?>
+<p>My name is <?php echo $name[0]?></p>
+
