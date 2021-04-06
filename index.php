@@ -26,3 +26,18 @@ myFirstFunction('jane','blue');
 ?>
 <p>My name is <?php echo $name[0]?></p>
 
+
+<?php  
+    $name = array('Arjun','Malik','Toto','Malik');
+    $count=0;
+    while($count<count($name))
+    {
+        $arr1 = "Hi , my name is $name[$count]" ;  
+        $count++;
+        $arr2= " and my last name is $name[$count]";
+        $count++;
+        $arr=array($arr1,$arr2);
+        echo join(" ",$arr)."<br>";
+    }
+?>
+
