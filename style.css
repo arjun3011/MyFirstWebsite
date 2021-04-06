@@ -3,3 +3,7 @@ Theme Name: Kali Linux
 Author: Arjun
 Version: 1.0
 */
+
+body{
+    color: green;
+}
