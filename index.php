@@ -23,10 +23,11 @@
         <div class ="generic-content">
             <?php the_excerpt(); ?>
             <p><a class ="btn btn--small btn--blue" href='<?php the_permalink();?>'>Continue reading &raquo;</a></p>
+            
         </div>
     <?php
     }
-    echo paginate_links();
+    echo paginate_links(); 
 get_footer();
 ?>
 

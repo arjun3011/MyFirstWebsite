@@ -13,6 +13,17 @@ function university_features() {
   register_nav_menu('Menu_Header', 'Header Menu Location' );
   register_nav_menu('Menu_Footer', 'Footers Menu Location' );
   add_theme_support('title-tag');
+  add_theme_support('post-thumbnails');
+  add_image_size('image_landscape',400,260);
+  add_image_size('image_portrait',408,660,false);
 }
 
 add_action('after_setup_theme', 'university_features');
+function custom_queries($query){
+  if(!is_admin() AND is_post_type_archive('program') AND $query->is_main_query()){
+    $query->set('orderby','title');
+    $query->set('order','ASC');
+    $query->set('posts_per_page',-1);
+  }
+}
+add_action('pre_get_posts' ,'custom_queries');
