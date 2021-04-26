@@ -1,14 +1,12 @@
 <?php 
 # main blog page 
- get_header(); ?>
- <div class="page-banner">
-    <div class="page-banner__bg-image" style="background-image: url(<?php echo get_theme_file_uri('/images/ocean.jpg') ?>);"></div>
-    <div class="page-banner__content container container--narrow">
-      <h1 class="page-banner__title">Wlecome to the blog!</h1>
-      <div class="page-banner__intro">
-      </div>
-    </div>  
-  </div>
+ get_header(); 
+ pageHeaderImage(array(
+   'title'=>'Wlecome to the blog',
+   'photo'=> 'https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'
+ ));
+ ?>
+
   <div class="container container--narrow page-section">
   <?php 
 
